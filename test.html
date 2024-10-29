@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>打开应用</title>
+  </head>
+  <body>
+    <h1>打开指定包名的应用</h1>
+    <button onclick="openApp()">打开车机应用</button>
+
+    <script>
+      function openApp() {
+        // 使用您配置的协议来尝试打开App
+        const appUrl = "openapp://suiwen:80/main";
+
+        // 尝试导航到自定义 URL scheme
+        window.location.href = appUrl;
+      }
+    </script>
+  </body>
+</html>
